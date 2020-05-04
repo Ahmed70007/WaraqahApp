@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="WaraqahApp.Pages.Authentication.FirstPage">
+    <AbsoluteLayout>
+        <Image
+            AbsoluteLayout.LayoutBounds="0,0,1,1"
+            AbsoluteLayout.LayoutFlags="All"
+            Aspect="AspectFill"
+            Opacity="0.9"
+            Source="bg9.jpg" />
+        <Image
+            x:Name="Logo"
+            Opacity="0"
+            TranslationY="-50"
+            Source="LogoFirstPage.jpg"
+            WidthRequest="80"
+            AbsoluteLayout.LayoutBounds="0,0,1,.7"
+            AbsoluteLayout.LayoutFlags="All"
+            BackgroundColor="#fff"
+            HorizontalOptions="CenterAndExpand"
+            VerticalOptions="CenterAndExpand" />
+        <StackLayout
+            Margin="10,30,10,30"
+            AbsoluteLayout.LayoutBounds="0,0,1,1"
+            AbsoluteLayout.LayoutFlags="All"
+            Spacing="20"
+            VerticalOptions="EndAndExpand">
+            <StackLayout
+                Orientation="Vertical"
+                Spacing="50"
+                HorizontalOptions="FillAndExpand">
+                <Label
+                    FontSize="40"
+                    FontAttributes="Bold"
+                    Text="WELCOME TO WARAQAH APP"
+                    TextColor="White"
+                    HorizontalTextAlignment="Center"
+                    HorizontalOptions="FillAndExpand" />
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <Button
+                        x:Name="LoginButton"
+                        TranslationX="-50"
+                        Opacity="0"
+                        HeightRequest="60"
+                        BackgroundColor="#a74c05"
+                        CornerRadius="0"
+                        Text="LOGIN"
+                        Clicked="Login"
+                        TextColor="#fff"
+                        HorizontalOptions="FillAndExpand" />
+                    <Button
+                        x:Name="SignupButton"
+                        TranslationX="50"
+                        Opacity="0"
+                        HeightRequest="60"
+                        BackgroundColor="#fff"
+                        BorderColor="#fff"
+                        BorderWidth="1"
+                        CornerRadius="0"
+                        Text="SIGN UP"
+                        Clicked="Signup"
+                        FontAttributes="Bold"
+                        TextColor="#a74c05"
+                        HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+            </StackLayout>
+            <Label
+                FontSize="10"
+                TextColor="White"
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="EndAndExpand">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="By signing up, you agree with our" />
+                        <Span
+                            Text="Terms and Conditions"
+                            TextColor="#a74c05"
+                            FontAttributes="Bold"
+                            FontSize="12"
+                            TextDecorations="Underline" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>

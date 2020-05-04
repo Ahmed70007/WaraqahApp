@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:customelements="clr-namespace:WaraqahApp.CustomElements"
+             mc:Ignorable="d"
+             x:Class="WaraqahApp.Pages.MenuSections.MenuArt">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout HeightRequest="2130">
+                <AbsoluteLayout BackgroundColor="#a74c05">
+
+                    <Button  Clicked="Cancel" ImageSource="LeftBBIcon.png" BackgroundColor="#fff" FontSize="Medium" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="0,1" HeightRequest="50" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                    <Label Text="Art Books" FontSize="22" Margin="160,10,0,10" TextColor="#fff" />
+
+                </AbsoluteLayout>
+
+                <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+
+                <StackLayout Grid.Row="0" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="ArtBook1.png" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="A short, powerful, illustrated book written by Khaled Hosseini in response to the current refugee crisis, Sea Prayer is composed in the form of a letter, from a father to his son, on the eve of their journey." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#eb8c2d" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                </StackLayout>
+
+                    <BoxView Grid.Row="1" Grid.ColumnSpan="2" Margin="60,50,60,50" WidthRequest="1" HeightRequest="3" Color="#a74c05"/>
+
+                    <StackLayout Grid.Row="2" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="ArtBook2.png" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="This text is the 16th revised and updated edition of this introduction to art, from the earliest cave paintings to experimental art." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#eb8c2d" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="3" Grid.ColumnSpan="2" Margin="60,50,60,50" WidthRequest="1" HeightRequest="3" Color="#a74c05"/>
+
+                    <StackLayout Grid.Row="4" Grid.ColumnSpan="2" Margin="0,5,5,5">
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="ArtBook3.png" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="It begins with a boy. Theo Decker, a thirteen-year-old New Yorker, miraculously survives an accident that kills his mother. Abandoned by his father, Theo is taken in by the family of a wealthy friend." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#eb8c2d" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                        
+                    </StackLayout>
+
+                    <BoxView Grid.Row="5" Grid.ColumnSpan="2" Margin="60,50,60,50" WidthRequest="1" HeightRequest="3" Color="#a74c05"/>
+
+                    <StackLayout Grid.Row="6" Grid.ColumnSpan="2" Margin="0,5,5,5">
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="ArtBook4.png" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="A pioneering work in the movement to free art from its traditional bonds to material reality, this book is one of the most important documents in the history of modern art." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#eb8c2d" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                        
+                    </StackLayout>
+
+                    <BoxView Grid.Row="7" Grid.ColumnSpan="2" Margin="60,50,60,50" WidthRequest="1" HeightRequest="3" Color="#a74c05"/>
+
+                    <StackLayout Grid.Row="8" Grid.ColumnSpan="2" Margin="0,5,5,5">
+
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="ArtBook5.png" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="A new selection of post-impressionist painter Vincent Van Gough's letters, The Letters of Vincent van Gogh put a human face on one of the most haunting figures in modern Western culture." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#eb8c2d" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                        
+                    </StackLayout>
+
+                </Grid>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

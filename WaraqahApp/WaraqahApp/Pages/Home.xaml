@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:WaraqahApp.ViewModels"
+             xmlns:b="clr-namespace:WaraqahApp.Behaviors"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             mc:Ignorable="d"
+             x:Class="WaraqahApp.Pages.Home">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="ActiveIndicator" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="Red" />
+            </Style>
+            <Style x:Key="InactiveIndicator" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="OutlineColor" Value="Red" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView HeightRequest="1800">
+            <StackLayout Spacing="0">
+                <Image Source="LogoHome.png" HeightRequest="100" HorizontalOptions="Center" Margin="0,20,0,30" />
+                <CarouselView x:Name="reiCV"
+                          VerticalOptions="Start"
+                          Position="1"
+                          PeekAreaInsets="45"
+                          HeightRequest="150">
+                    <CarouselView.Behaviors>
+                        <b:CarouselBehavior Scale="0.9" />
+                    </CarouselView.Behaviors>
+                    <CarouselView.ItemsLayout>
+                        <LinearItemsLayout
+                        Orientation="Horizontal"
+                        ItemSpacing="0"
+                        SnapPointsAlignment="Center"
+                        SnapPointsType="MandatorySingle" />
+                    </CarouselView.ItemsLayout>
+                    <CarouselView.ItemsSource>
+                        <x:Array Type="{x:Type vm:ItemViewModel}">
+                            <vm:ItemViewModel ImageSource="h01.png"/>
+                            <vm:ItemViewModel ImageSource="h02.png"/>
+                            <vm:ItemViewModel ImageSource="h03.png"/>
+                            <vm:ItemViewModel ImageSource="h04.png"/>
+                            <vm:ItemViewModel ImageSource="h05.png"/>
+                        </x:Array>
+                    </CarouselView.ItemsSource>
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding ImageSource}"
+                               ScaleX="{Binding Scale}"
+                               ScaleY="{Binding Scale}"
+                               VerticalOptions="Start" />
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="10" />
+                    </Grid.RowDefinitions>
+
+                    <Label Grid.Row="0" Grid.ColumnSpan="3" Text="POPULAR" TextColor="#000" FontSize="25" Margin="20,50,0,0" />
+                    <BoxView Grid.Row="1" Grid.ColumnSpan="3" HorizontalOptions="FillAndExpand" Margin="20,0,220,0" WidthRequest="1" HeightRequest="3" Color="#a74c05"/>
+
+                    <!-- \\\ First Column for Popular Books ///  -->
+                    
+                    <StackLayout Grid.Row="3" Grid.Column="0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="10" />
+                            </Grid.RowDefinitions>
+
+                            <ImageButton Grid.Row="1"
+                                           Source="ArtBook1.jpg"
+                                           HorizontalOptions="Center"
+                                           WidthRequest="125"
+                                           BackgroundColor="GhostWhite"
+                                           android:ImageButton.IsShadowEnabled="true"
+                                           android:ImageButton.ShadowColor="Gray"
+                                           android:ImageButton.ShadowRadius="12">
+
+                                <android:ImageButton.ShadowOffset>
+                                    <Size>
+                                        <x:Arguments>
+                                            <x:Double>10</x:Double>
+                                            <x:Double>10</x:Double>
+                                        </x:Arguments>
+                                    </Size>
+                                </android:ImageButton.ShadowOffset>
+                            </ImageButton>
+                            <Button Grid.Row="3" Text="Read" ImageSource="RightBBIcon.png" ContentLayout="Right,0" TextColor="#a74c05" BackgroundColor="Transparent" FontSize="18" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="1,0" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+                        </Grid>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="3" Grid.Column="1">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="10" />
+                            </Grid.RowDefinitions>
+   
+                            <ImageButton Grid.Row="1"
+                                           Source="FantasyBook1.jpg"
+                                           HorizontalOptions="Center"
+                                           WidthRequest="125"
+                                           BackgroundColor="GhostWhite"
+                                           android:ImageButton.IsShadowEnabled="true"
+                                           android:ImageButton.ShadowColor="Gray"
+                                           android:ImageButton.ShadowRadius="12">
+
+                                <android:ImageButton.ShadowOffset>
+                                    <Size>
+                                        <x:Arguments>
+                                            <x:Double>10</x:Double>
+                                            <x:Double>10</x:Double>
+                                        </x:Arguments>
+                                    </Size>
+                                </android:ImageButton.ShadowOffset>
+                            </ImageButton>
+
+                            <Button Grid.Row="3" Text="Read" ImageSource="RightBBIcon.png" ContentLayout="Right,0" TextColor="#a74c05" BackgroundColor="Transparent" FontSize="18" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="1,0" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+                        </Grid>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="3" Grid.Column="2">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="10" />
+                            </Grid.RowDefinitions>
+                            
+                            <ImageButton Grid.Row="1"
+                                           Source="HistoryBook1.jpg"
+                                           HorizontalOptions="Center"
+                                           WidthRequest="125"
+                                           BackgroundColor="GhostWhite"
+                                           android:ImageButton.IsShadowEnabled="true"
+                                           android:ImageButton.ShadowColor="Gray"
+                                           android:ImageButton.ShadowRadius="12">
+
+                                <android:ImageButton.ShadowOffset>
+                                    <Size>
+                                        <x:Arguments>
+                                            <x:Double>10</x:Double>
+                                            <x:Double>10</x:Double>
+                                        </x:Arguments>
+                                    </Size>
+                                </android:ImageButton.ShadowOffset>
+                            </ImageButton>
+
+                            <Button Grid.Row="3" Text="Read" ImageSource="RightBBIcon.png" ContentLayout="Right,0" TextColor="#a74c05" BackgroundColor="Transparent" FontSize="18" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="1,0" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                            
+
+                        </Grid>
+                    </StackLayout>
+
+                    <!-- \\\ Second Column for Popular Books ///  -->
+                    
+                    <StackLayout Grid.Row="5" Grid.Column="0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="10" />
+                            </Grid.RowDefinitions>
+
+                            <ImageButton Grid.Row="1"
+                                           Source="HistoryBook3.jpg"
+                                           HorizontalOptions="Center"
+                                           WidthRequest="125"
+                                           BackgroundColor="GhostWhite"
+                                           android:ImageButton.IsShadowEnabled="true"
+                                           android:ImageButton.ShadowColor="Gray"
+                                           android:ImageButton.ShadowRadius="12">
+
+                                <android:ImageButton.ShadowOffset>
+                                    <Size>
+                                        <x:Arguments>
+                                            <x:Double>10</x:Double>
+                                            <x:Double>10</x:Double>
+                                        </x:Arguments>
+                                    </Size>
+                                </android:ImageButton.ShadowOffset>
+                            </ImageButton>
+
+                            <Button Grid.Row="3" Text="Read" ImageSource="RightBBIcon.png" ContentLayout="Right,0" TextColor="#a74c05" BackgroundColor="Transparent" FontSize="18" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="1,0" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+                        </Grid>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="5" Grid.Column="1">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="10" />
+                            </Grid.RowDefinitions>
+
+                            <ImageButton Grid.Row="1"
+                                           Source="TravelBook1.jpg"
+                                           HorizontalOptions="Center"
+                                           WidthRequest="125"
+                                           BackgroundColor="GhostWhite"
+                                           android:ImageButton.IsShadowEnabled="true"
+                                           android:ImageButton.ShadowColor="Gray"
+                                           android:ImageButton.ShadowRadius="12">
+
+                                <android:ImageButton.ShadowOffset>
+                                    <Size>
+                                        <x:Arguments>
+                                            <x:Double>10</x:Double>
+                                            <x:Double>10</x:Double>
+                                        </x:Arguments>
+                                    </Size>
+                                </android:ImageButton.ShadowOffset>
+                            </ImageButton>
+
+                            <Button Grid.Row="3" Text="Read" ImageSource="RightBBIcon.png" ContentLayout="Right,0" TextColor="#a74c05" BackgroundColor="Transparent" FontSize="18" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="1,0" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+                        </Grid>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="5" Grid.Column="2">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="10" />
+                            </Grid.RowDefinitions>
+
+                            <ImageButton Grid.Row="1"
+                                           Source="FantasyBook2.jpg"
+                                           HorizontalOptions="Center"
+                                           WidthRequest="125"
+                                           BackgroundColor="GhostWhite"
+                                           android:ImageButton.IsShadowEnabled="true"
+                                           android:ImageButton.ShadowColor="Gray"
+                                           android:ImageButton.ShadowRadius="12">
+
+                                <android:ImageButton.ShadowOffset>
+                                    <Size>
+                                        <x:Arguments>
+                                            <x:Double>10</x:Double>
+                                            <x:Double>10</x:Double>
+                                        </x:Arguments>
+                                    </Size>
+                                </android:ImageButton.ShadowOffset>
+                            </ImageButton>
+
+                            <Button Grid.Row="3" Text="Read" ImageSource="RightBBIcon.png" ContentLayout="Right,0" TextColor="#a74c05" BackgroundColor="Transparent" FontSize="18" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="1,0" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+
+                        </Grid>
+                    </StackLayout>
+
+                    <!-- \\\ Third Column for Popular Books ///  -->
+
+                    <StackLayout Grid.Row="7" Grid.Column="0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="10" />
+                            </Grid.RowDefinitions>
+
+                            <ImageButton Grid.Row="1"
+                                           Source="TravelBook2.jpg"
+                                           HorizontalOptions="Center"
+                                           WidthRequest="125"
+                                           BackgroundColor="GhostWhite"
+                                           android:ImageButton.IsShadowEnabled="true"
+                                           android:ImageButton.ShadowColor="Gray"
+                                           android:ImageButton.ShadowRadius="12">
+
+                                <android:ImageButton.ShadowOffset>
+                                    <Size>
+                                        <x:Arguments>
+                                            <x:Double>10</x:Double>
+                                            <x:Double>10</x:Double>
+                                        </x:Arguments>
+                                    </Size>
+                                </android:ImageButton.ShadowOffset>
+                            </ImageButton>
+
+                            <Button Grid.Row="3" Text="Read" ImageSource="RightBBIcon.png" ContentLayout="Right,0" TextColor="#a74c05" BackgroundColor="Transparent" FontSize="18" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="1,0" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+
+                        </Grid>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="7" Grid.Column="1">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="10" />
+                            </Grid.RowDefinitions>
+
+                            <ImageButton Grid.Row="1"
+                                           Source="HistoryBook2.jpg"
+                                           HorizontalOptions="Center"
+                                           WidthRequest="125"
+                                           BackgroundColor="GhostWhite"
+                                           android:ImageButton.IsShadowEnabled="true"
+                                           android:ImageButton.ShadowColor="Gray"
+                                           android:ImageButton.ShadowRadius="12">
+
+                                <android:ImageButton.ShadowOffset>
+                                    <Size>
+                                        <x:Arguments>
+                                            <x:Double>10</x:Double>
+                                            <x:Double>10</x:Double>
+                                        </x:Arguments>
+                                    </Size>
+                                </android:ImageButton.ShadowOffset>
+                            </ImageButton>
+
+                            <Button Grid.Row="3" Text="Read" ImageSource="RightBBIcon.png" ContentLayout="Right,0" TextColor="#a74c05" BackgroundColor="Transparent" FontSize="18" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="1,0" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+                        </Grid>
+                    </StackLayout>
+
+
+                    <StackLayout Grid.Row="7" Grid.Column="2">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="10" />
+                            </Grid.RowDefinitions>
+
+                            <ImageButton Grid.Row="1"
+                                           Source="ClassicBook1.jpg"
+                                           HorizontalOptions="Center"
+                                           WidthRequest="125"
+                                           BackgroundColor="GhostWhite"
+                                           android:ImageButton.IsShadowEnabled="true"
+                                           android:ImageButton.ShadowColor="Gray"
+                                           android:ImageButton.ShadowRadius="12">
+
+                                <android:ImageButton.ShadowOffset>
+                                    <Size>
+                                        <x:Arguments>
+                                            <x:Double>10</x:Double>
+                                            <x:Double>10</x:Double>
+                                        </x:Arguments>
+                                    </Size>
+                                </android:ImageButton.ShadowOffset>
+                            </ImageButton>
+
+                            <Button Grid.Row="3" Text="Read" ImageSource="RightBBIcon.png" ContentLayout="Right,0" TextColor="#a74c05" BackgroundColor="Transparent" FontSize="18" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="1,0" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+
+                        </Grid>
+                    </StackLayout>
+
+
+
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

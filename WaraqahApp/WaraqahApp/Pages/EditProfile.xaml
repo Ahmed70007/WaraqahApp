@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WaraqahApp.Pages.EditProfile">
+    <ContentPage.Content>
+        <StackLayout>
+            <AbsoluteLayout BackgroundColor="#fff">
+
+                <Button Clicked="Cancel" ImageSource="LeftBBIcon.png" Margin="0,0,320,0" TextColor="#a74c05" BackgroundColor="#fff" FontSize="Medium" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="0,1" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                <Label Text="Edit Profile" FontSize="22" HorizontalTextAlignment="Center" Margin="135,9,0,0" HorizontalOptions="Center"  TextColor="#a74c05" />
+                <Button ImageSource="TrueBBIcon.png" ContentLayout="Right,0" TextColor="#a74c05" BackgroundColor="#fff" FontSize="Medium" Margin="300,0,0,0" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="1,0" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            </AbsoluteLayout>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+
+
+
+
+
+
+
+
+
+
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

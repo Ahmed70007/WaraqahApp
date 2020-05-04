@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:customelements="clr-namespace:WaraqahApp.CustomElements"
+             mc:Ignorable="d"
+             x:Class="WaraqahApp.Pages.MenuSections.MenuFantasy">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout HeightRequest="2050">
+        
+                <AbsoluteLayout BackgroundColor="#a74c05">
+
+                    <Button  Clicked="Cancel" ImageSource="LeftBBIcon.png" BackgroundColor="#fff" FontSize="Medium" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="0,1" HeightRequest="50" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                    <Label Text="Fantasy Books" FontSize="22" Margin="160,10,0,10" TextColor="#fff" />
+
+                </AbsoluteLayout>
+
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <StackLayout Grid.Row="0" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="FantasyBook1.jpg" HorizontalOptions="Center" WidthRequest="125" />
+                            
+                            <Label Grid.Row="2" Grid.Column="1" Text="The explosive finale to the New York Times and USA Today bestselling Shatter Me series." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#d97615" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="1" Grid.ColumnSpan="2" Margin="60,50,60,50" WidthRequest="1" HeightRequest="3" Color="#a74c05"/>
+
+                    <StackLayout Grid.Row="2" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="FantasyBook2.jpg" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="A safe haven between four realms. The girl sworn to protect it -- at any cost." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#d97615" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="3" Grid.ColumnSpan="2" Margin="60,50,60,50" WidthRequest="1" HeightRequest="3" Color="#a74c05"/>
+
+                    <StackLayout Grid.Row="4" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="FantasyBook3.jpg" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="Bryce Quinlan had the perfect lifeworking hard all day and partying all nightuntil a demon murdered her closest friends, leaving her bereft, wounded, and alone." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#d97615" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="5" Grid.ColumnSpan="2" Margin="60,50,60,50" WidthRequest="1" HeightRequest="3" Color="#a74c05"/>
+
+                    <StackLayout Grid.Row="6" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="FantasyBook4.jpg" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="A great read for fans of fairy tales, myths and legends Come for the adventure, stay for the sassy jerkwad firebird." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="16" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#d97615" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="7" Grid.ColumnSpan="2" Margin="60,50,60,50" WidthRequest="1" HeightRequest="3" Color="#a74c05"/>
+
+                    <StackLayout Grid.Row="8" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="FantasyBook5.jpg" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="Welcome to the world of the Grisha.&#x0a;&#x0a;Kaz Brekker and his crew of deadly outcasts have just pulled off a heist so daring even they didn't think they'd survive." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#d97615" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                    </StackLayout>
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

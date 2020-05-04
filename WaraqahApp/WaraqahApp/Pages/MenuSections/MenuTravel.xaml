@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:customelements="clr-namespace:WaraqahApp.CustomElements"
+             mc:Ignorable="d"
+             x:Class="WaraqahApp.Pages.MenuSections.MenuTravel">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout HeightRequest="2100">
+
+                <AbsoluteLayout BackgroundColor="#a74c05">
+
+                    <Button  Clicked="Cancel" ImageSource="LeftBBIcon.png" BackgroundColor="#fff" FontSize="Medium" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="0,1" HeightRequest="50" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                    <Label Text="Travel Books" FontSize="22" Margin="160,10,0,10" TextColor="#fff" />
+
+                </AbsoluteLayout>
+
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <StackLayout Grid.Row="0" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="TravelBook1.jpg" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="The electrifying debut memoir of a son of working-class Mexican immigrants who fled a life of labor in fruit-packing plants to run in an Indigenous marathon from Canada to Guatemala." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#d97615" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="1" Grid.ColumnSpan="2" Margin="60,50,60,50" WidthRequest="1" HeightRequest="3" Color="#a74c05"/>
+
+                    <StackLayout Grid.Row="2" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="TravelBook2.jpg" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="Vagabonding is about taking time off from your normal life - from six weeks to four months to two years - to discover and experience the world on your own terms." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#d97615" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="3" Grid.ColumnSpan="2" Margin="60,50,60,50" WidthRequest="1" HeightRequest="3" Color="#a74c05"/>
+
+                    <StackLayout Grid.Row="4" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="TravelBook3.jpg" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="Shane has been doing college all wrong. Pre-med, stellar grades, and happy parentssounds idealbut Shane's made zero friends, goes home every weekend, and romancewhats that?" TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#d97615" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="5" Grid.ColumnSpan="2" Margin="60,50,60,50" WidthRequest="1" HeightRequest="3" Color="#a74c05"/>
+
+                    <StackLayout Grid.Row="6" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="TravelBook4.jpg" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="When Evie Perez is cut off from everything she loves and forced to move to Iceland for the summer, she takes her canvas and paintbrushes into the picturesque cherry orchard behind her guesthouse." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#d97615" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="7" Grid.ColumnSpan="2" Margin="60,50,60,50" WidthRequest="1" HeightRequest="3" Color="#a74c05"/>
+
+                    <StackLayout Grid.Row="8" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="TravelBook5.jpg" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="In this witty and warm-hearted account, Peter Mayle tells what it is like to realize a long-cherished dream and actually move into a 200-year-old stone farmhouse in the remote country of the Lubéron with his wife and two large dogs." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#d97615" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                    </StackLayout>
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

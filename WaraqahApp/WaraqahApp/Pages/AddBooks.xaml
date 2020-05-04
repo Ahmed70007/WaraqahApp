@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:WaraqahApp.Controls"
+             mc:Ignorable="d"
+             x:Class="WaraqahApp.Pages.AddBooks">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <Grid RowSpacing="20" Margin="20,0,20,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="10" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="20" />
+                    </Grid.RowDefinitions>
+
+
+                    <Image Grid.Row="0" Grid.ColumnSpan="2" Source="LogoHome.png" Margin="0,20,0,0" HeightRequest="100" />
+
+                    <Entry  Grid.Row="2" Grid.ColumnSpan="2" PlaceholderColor="#a74c05" TextColor="#a74c05" Keyboard="Text" Placeholder="Name Book..." />
+
+                    <Entry  Grid.Row="3" Grid.ColumnSpan="2" PlaceholderColor="#a74c05" TextColor="#a74c05" Placeholder="Author..." />
+
+                    <controls:CustomPicker Grid.Row="4" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" TextColor="#a74c05" Image="ic_arrow_drop_down.png" Title="Select Category">
+                        <controls:CustomPicker.Items>
+                            <x:String>Art</x:String>
+                            <x:String>Busines</x:String>
+                            <x:String>Travel</x:String>
+                            <x:String>Classic</x:String>
+                            <x:String>Fantasy</x:String>
+                            <x:String>History</x:String>
+                            <x:String>Sports</x:String>
+                        </controls:CustomPicker.Items>
+                    </controls:CustomPicker>
+                    
+                    <Entry  Grid.Row="5" Grid.ColumnSpan="2" PlaceholderColor="#a74c05" TextColor="#a74c05" Keyboard="Text" Placeholder="Upload Picture" />
+
+                    <Frame CornerRadius="10" Grid.Row="6" Grid.ColumnSpan="2">
+                        <Editor HeightRequest="300" Grid.Row="6" Grid.ColumnSpan="2" Keyboard="Chat" TextColor="#a74c05" PlaceholderColor="#a74c05" Placeholder="Information about your book! "/>
+                    </Frame>
+                    <Button Grid.Row="7" Grid.ColumnSpan="2" BackgroundColor="#a74c05" CornerRadius="20" FontAttributes="Bold" FontSize="18" Text="Adding my book" TextColor="#fff" />
+                    
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

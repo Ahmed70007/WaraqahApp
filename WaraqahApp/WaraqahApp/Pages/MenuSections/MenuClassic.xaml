@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:customelements="clr-namespace:WaraqahApp.CustomElements"
+             mc:Ignorable="d"
+             x:Class="WaraqahApp.Pages.MenuSections.MenuClassic">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout HeightRequest="2120">
+
+                <AbsoluteLayout BackgroundColor="#a74c05">
+
+                    <Button  Clicked="Cancel" ImageSource="LeftBBIcon.png" BackgroundColor="#fff" FontSize="Medium" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="0,1" HeightRequest="50" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                    <Label Text="Classic Books" FontSize="22" Margin="160,10,0,10" TextColor="#fff" />
+
+                </AbsoluteLayout>
+
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <StackLayout Grid.Row="0" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="ClassicBook1.jpg" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="Among the seminal texts of the 20th century, Nineteen Eighty-Four is a rare work that grows more haunting as its futuristic purgatory becomes more real." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#d97615" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="1" Grid.ColumnSpan="2" Margin="60,50,60,50" WidthRequest="1" HeightRequest="3" Color="#a74c05"/>
+
+                    <StackLayout Grid.Row="2" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="ClassicBook2.jpg" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="Offred is a Handmaid in the Republic of Gilead. She may leave the home of the Commander and his wife once a day to walk to food markets whose signs are now pictures instead of words because women are no longer allowed to read." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#d97615" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="3" Grid.ColumnSpan="2" Margin="60,50,60,50" WidthRequest="1" HeightRequest="3" Color="#a74c05"/>
+
+                    <StackLayout Grid.Row="4" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="ClassicBook3.jpg" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="First, there were tena curious assortment of strangers summoned as weekend guests to a little private island off the coast of Devon." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#d97615" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="5" Grid.ColumnSpan="2" Margin="60,50,60,50" WidthRequest="1" HeightRequest="3" Color="#a74c05"/>
+
+                    <StackLayout Grid.Row="6" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="ClassicBook4.jpg" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="Guy Montag is a fireman. In his world, where television rules and literature is on the brink of extinction, firemen start fires rather than put them out." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#d97615" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="7" Grid.ColumnSpan="2" Margin="60,50,60,50" WidthRequest="1" HeightRequest="3" Color="#a74c05"/>
+
+                    <StackLayout Grid.Row="8" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="ClassicBook5.jpg" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="Paulo Coelho's enchanting novel has inspired a devoted following around the world." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#d97615" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                    </StackLayout>
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

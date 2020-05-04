@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:customelements="clr-namespace:WaraqahApp.CustomElements"
+             mc:Ignorable="d"
+             x:Class="WaraqahApp.Pages.Authentication.Login">
+    <ContentPage.Content>
+        <StackLayout Orientation="Horizontal">
+            <RelativeLayout>
+                <Grid RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,Property=Width}"
+                      RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,Property=Height}">
+                    <RelativeLayout Margin="0,20,0,0" x:Name="container">
+                        <Image x:Name="boxView" 
+                               Source="Waraqah_LoginPage.png"
+                               HeightRequest="90"
+                               RelativeLayout.XConstraint=
+                               "{ConstraintExpression 
+                               Type=RelativeToParent,
+                               Property=Width, 
+                               Factor=0.5,
+                               Constant=-43}" />
+                    </RelativeLayout>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="120" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="1" Grid.ColumnSpan="2" Margin="30,0,0,0" FontSize="22" TextColor="#000" LineHeight="1.5" Text="hello!" />
+                        <Label Grid.Row="2" Grid.ColumnSpan="2" Margin="30,0,0,0" FontSize="16" TextColor="#8c8c8c" Text="Sign in to Waraqah" />
+                        <BoxView Grid.Row="3" Grid.ColumnSpan="2" Margin="30,10,270,0" WidthRequest="1" HeightRequest="2" Color="#a74c05"/>
+
+                        <StackLayout Grid.Row="4" Grid.ColumnSpan="2">
+                            <Frame BackgroundColor="Transparent" Margin="10,0,30,0">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="11*"/>
+                                        <ColumnDefinition Width="120*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Source="ic_action_person_outline.png" Margin="1,0,5,0" Grid.Row="0" Grid.Column="0"/>
+                                    <Entry Placeholder="Username" Grid.Column="1" Grid.Row="0" TextColor="#000" x:Name="EntryUser" PlaceholderColor="#000" FontSize="16" />
+                                </Grid>
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="5" Grid.ColumnSpan="2">
+                            <Frame BackgroundColor="Transparent" Margin="10,0,30,0">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="10*"/>
+                                        <ColumnDefinition Width="120*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="ic_action_lock_outline.png" Margin="1,0,5,0" Grid.Row="0" Grid.Column="0"/>
+                                    <Entry Placeholder="Password" IsPassword="True" Grid.Column="1" Grid.Row="0" TextColor="#000" x:Name="EntryPassword" PlaceholderColor="#000" FontSize="16" />
+                                </Grid>
+                            </Frame>
+                        </StackLayout>
+
+                        <customelements:GradientButton Grid.Row="6" Grid.Column="0" Text="Login" Margin="20" Image="LeftIcon.png" ContentLayout="left,0" Padding="30,0,30,0" TextColor="#fff" StartColor="#f4bf8b" EndColor="#a74c05" GradientOrientation="Horizontal" Clicked="Btn1" />
+
+                        <customelements:GradientButton Grid.Row="6" Grid.Column="1" Text="Register" Margin="20" TextColor="#fff" StartColor="#a74c05" EndColor="#f4bf8b" GradientOrientation="Horizontal" Clicked="Btn2" />
+
+                        <Button Grid.Row="7" Grid.ColumnSpan="2" Text="I Forgot my password?" HorizontalOptions="FillAndExpand" TextColor="#a74c05" BackgroundColor="Transparent" />
+
+                    </Grid>
+                </Grid>
+            </RelativeLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

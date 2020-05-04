@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:data="clr-namespace:WaraqahApp.Data"
+             xmlns:model="clr-namespace:WaraqahApp.Models"
+             xmlns:view="clr-namespace:WaraqahApp.ViewModels"
+             Shell.FlyoutBehavior="Disabled"
+             mc:Ignorable="d"
+             x:Class="WaraqahApp.Pages.Search">
+    <ContentPage.Content>
+        <StackLayout x:DataType="view:CollectionViewModel">
+
+            <Image Source="LogoHome.png" HeightRequest="100" HorizontalOptions="Center" Margin="0,20,0,30" />
+
+
+            <SearchBar
+                Text="{Binding Filter, Mode=TwoWay}"
+                Placeholder="Search..."
+                TextColor="#a74c05"
+                PlaceholderColor="#a74c05"
+                SearchCommand="{Binding SearchCommand}">
+            </SearchBar>
+
+            <CollectionView
+            SelectedItem="{Binding Selection, Mode=TwoWay}"
+            SelectionChangedCommand="{Binding SelectionCommand}"
+            SelectionMode="Single"
+            Margin="15"
+            ItemsSource="{Binding ItemList}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Item">
+                        <Grid Padding="8">
+                            <Frame
+                            BackgroundColor="#a74c05"
+                            CornerRadius="5">
+                                <StackLayout>
+                                    <Label
+                                        TextColor="#fff"
+                                        FontSize="Medium"
+                                        Text="{Binding NameBook}">
+                                    </Label>
+                                </StackLayout>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

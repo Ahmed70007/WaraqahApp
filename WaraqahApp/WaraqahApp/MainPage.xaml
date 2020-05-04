@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<xf:BottomBarPage  xmlns="http://xamarin.com/schemas/2014/forms"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                   xmlns:xf="clr-namespace:WaraqahApp.BottomBar"
+                   xmlns:local="clr-namespace:WaraqahApp.Pages"
+                   x:Class="WaraqahApp.MainPage">
+
+    <local:Home Title="Home"
+                       Icon="ic_action_home.png"
+                       xf:BottomBarPageExtensions.TabColor="#a74c05"
+                       xf:BottomBarPageExtensions.BadgeColor="DeepPink" />
+
+    <local:Menu Title="Categories"
+                       Icon="ic_action_menu.png"
+                       xf:BottomBarPageExtensions.TabColor="#a74c05"
+                       xf:BottomBarPageExtensions.BadgeColor="DeepPink" />
+
+    <local:AddBooks Title="Add Book"
+                       Icon="ic_action_add_circle.png"
+                       xf:BottomBarPageExtensions.TabColor="#a74c05"
+                       xf:BottomBarPageExtensions.BadgeColor="DeepPink" />
+
+    <local:Search Title="Search"
+                       Icon="ic_action_search.png"
+                       xf:BottomBarPageExtensions.TabColor="#a74c05"
+                       xf:BottomBarPageExtensions.BadgeColor="DeepPink" />
+
+    <local:Settings Title="Profile"
+                       Icon="ic_action_account_circle.png"
+                       xf:BottomBarPageExtensions.TabColor="#a74c05"
+                       xf:BottomBarPageExtensions.BadgeColor="DeepPink" />
+
+</xf:BottomBarPage>

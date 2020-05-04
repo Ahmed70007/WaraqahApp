@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C4B7B79-4FD2-4D92-BA84-628558070BE7}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>WaraqahApp.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>WaraqahApp.iOS</AssemblyName>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <ProvisioningType>automatic</ProvisioningType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>None</MtouchLink>
+    <MtouchInterpreter>-all</MtouchInterpreter>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Refractored.MvvmHelpers">
+      <Version>1.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.5.231</Version>
+    </PackageReference>
+    <PackageReference Include="ThriveGmbH.BottomNavigationBar.XF">
+      <Version>1.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+    <PackageReference Include="Xamarin.Forms.Visual.Material">
+      <Version>4.4.0.991220-pre3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\WaraqahApp\WaraqahApp.csproj">
+      <Project>{D7D45E20-F0A3-4341-B687-D56946CFDCC3}</Project>
+      <Name>WaraqahApp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ArtBook1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ArtBook2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ArtBook3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ArtBook4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ArtBook5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ArtMenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\bg9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BusinesBook1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BusinesBook2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BusinesBook3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BusinesBook4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BusinesBook5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\BusinesMenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ClassicBook1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ClassicBook2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ClassicBook3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ClassicBook4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ClassicBook5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ClassicMenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-568h%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-Portrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default-Portrait%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FacebookIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FantasyBook1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FantasyBook2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FantasyBook3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FantasyBook4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FantasyBook5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\FantasyMenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\h01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\h02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\h03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\h04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\h05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HistoryBook1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HistoryBook2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HistoryBook3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HistoryBook4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HistoryBook5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HistoryMenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_action_email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_action_lock_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_action_person_outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\InstegramIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LeftBBIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LeftBIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LeftIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LoadingPage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LogoFirstPage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LogoHome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\LogoW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\MS.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RightBBIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RightBIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\RightIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ShareAppCard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ShareAppIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SportsBook1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SportsBook2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SportsBook3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SportsBook4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SportsBook5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\SportsMenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TravelBook1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TravelBook2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TravelBook3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TravelBook4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TravelBook5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TravelMenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TrueBBIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\TwitterIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Waraqah.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Waraqah_LoginPage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\WebIcon.png" />
+  </ItemGroup>
+</Project>

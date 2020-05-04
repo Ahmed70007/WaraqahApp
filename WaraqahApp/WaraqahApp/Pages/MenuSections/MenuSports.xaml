@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:customelements="clr-namespace:WaraqahApp.CustomElements"
+             mc:Ignorable="d"
+             x:Class="WaraqahApp.Pages.MenuSections.MenuSports">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout HeightRequest="2050">
+
+                <AbsoluteLayout BackgroundColor="#a74c05">
+
+                    <Button  Clicked="Cancel" ImageSource="LeftBBIcon.png" BackgroundColor="#fff" FontSize="Medium" VerticalOptions="Center" AbsoluteLayout.LayoutBounds="0,1" HeightRequest="50" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+                    <Label Text="Sports Books" FontSize="22" Margin="160,10,0,10" TextColor="#fff" />
+
+                </AbsoluteLayout>
+
+
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <StackLayout Grid.Row="0" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="SportsBook1.jpg" HorizontalOptions="Center" WidthRequest="125" />
+                            
+                            <Label Grid.Row="2" Grid.Column="1" Text="Describe: Eli McKenna has a good life. Starting goalie for the Seattle Kingfishers, a beautiful wife, a lovely homehe even has a great dog." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#d97615" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="1" Grid.ColumnSpan="2" Margin="60,50,60,50" WidthRequest="1" HeightRequest="3" Color="#a74c05"/>
+
+                    <StackLayout Grid.Row="2" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="SportsBook2.jpg" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="Allison Titov and Asher Brooks have been best friends their whole lives." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#d97615" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="3" Grid.ColumnSpan="2" Margin="60,50,60,50" WidthRequest="1" HeightRequest="3" Color="#a74c05"/>
+
+                    <StackLayout Grid.Row="4" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="SportsBook3.jpg" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="Billy Beane, general manager of MLB's Oakland A's and protagonist of Michael Lewis's Moneyball." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14"  VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#d97615" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="5" Grid.ColumnSpan="2" Margin="60,50,60,50" WidthRequest="1" HeightRequest="3" Color="#a74c05"/>
+
+                    <StackLayout Grid.Row="6" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="SportsBook4.jpg" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="Three men, one summer of media, mentorship, and murder." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#d97615" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                    </StackLayout>
+
+                    <BoxView Grid.Row="7" Grid.ColumnSpan="2" Margin="60,50,60,50" WidthRequest="1" HeightRequest="3" Color="#a74c05"/>
+
+                    <StackLayout Grid.Row="8" Grid.ColumnSpan="2" Margin="0,5,5,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="20" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="2" Grid.Column="0" Source="SportsBook5.jpg" HorizontalOptions="Center" WidthRequest="125" />
+
+                            <Label Grid.Row="2" Grid.Column="1" Text="Vanessa Mazur knows she's doing the right thing. She shouldn't feel bad for quitting." TextColor="#000" HorizontalOptions="StartAndExpand" FontSize="14" VerticalOptions="StartAndExpand" />
+                            <customelements:GradientButton Grid.Row="3" Grid.Column="0" Text="Read More" CornerRadius="30" Margin="10" FontSize="16" HeightRequest="40" TextColor="#fff" StartColor="#d97615" EndColor="#a74c05" GradientOrientation="Horizontal" />
+                        </Grid>
+                    </StackLayout>
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
